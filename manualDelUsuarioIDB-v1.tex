@@ -1,0 +1,56 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}%PAQUETE PARA CORRECCION DE TIPOGRAFIA PARA ESPAÑOL
+\usepackage[english,spanish]{babel}%PAQUETE DICCIONARIO ESPAÑOL
+\usepackage{amssymb}%PAQUETES COMPLEMENTO PARA TIPOGRAFIA MATEMATICA
+\usepackage[pdftex]{graphicx}%PAQUETE PARA LA INCLUSION DE IMAGENES jpg, png Y pdf
+\usepackage{pdfpages}
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+\author{Instituto Dan Beninson}%AUTOR DEL DOCUMENTO
+\date{\today}%FECHA DE EDICION DEL DOCUMENTO
+\title{Manual del usuario LectorMySQL}%TITULO DEL DOCUMENTO
+
+\begin{document}
+\maketitle
+\abstract{El sistema de administración IDB es una máscara que facilita el manejo de tablas mysql. El sistema lee todas las bases de datos instaladas en el sistema y crea automáticamente formularios de alta, modificación, baja, consultas avanzadas, informes y otros. Es un sistema configurable y multiusuario capaz de limitar en lectura/escritura por tabla por usuario. 
+
+Fue programado en PHP y MySQL ejecutado como un servicio web en servidor Apache, --actualmente corriendo bajo linux Debian 9-- frente a la necesidad de dar soporte funcional a las dos sedes CAE y CAC y de centralizar dicha información.
+
+El próposito de este sistema es dar soporte administrativo a todas las áreas del instituto. El sistema cuenta con un núcleo principal llamado LectorMySQL y subsistemas dedicados a cada una de las necesidades. Así el Sistema IDB es de uso cotidiano para el manejo de información de alumnos, recursos, notas, biblioteca y otros.
+}
+
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\section{Introduccion}
+\subsection{¿Qué es y para que sirve?}
+\subsection{¿Qué es una base de datos?}
+\subsection{Tecnología}
+\section{Ingreso al sistema}
+\subsection{Elementos del menú principal}
+
+
+\section{Entorno de Usuario}
+\subsection{Tabla de usuario}
+\subsection{Búsquedas particulares}
+\subsection{Cambio de contraseña}
+\subsection{Importación de datos}
+\subsection{Compartir datos con otros usuarios}
+
+
+\section{Funciones de Tabla}
+\subsection{Búsquedas e índice}
+\subsection{Alta de datos}
+\subsection{Modificacion de datos}
+\subsection{Eliminación de datos}
+
+
+\section{Informes}
+\subsection{Edición de informes}
+\subsection{Exportación de datos a excel}
+\subsection{Backup por tabla}
+
+
+\end{document}
