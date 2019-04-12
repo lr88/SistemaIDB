@@ -65,7 +65,52 @@ En el segundo grupo nos re-direcciona a un sub-menú referente al año el cual q
 
 
 \section{Funciones de Tabla}
+
+\subsection{Estructura de una tabla de base de datos}
+
+Cuando el administrador da de alta una tabla en una base dados MySQL, es necesario definir una serie de parámetros y características de cada columna o \textbf{campo}. Es decir, que toda tabla del sistema tiene  definidos en detalle el tipo de datos para cada columna, para cada tabla. Por ejemplo definir si el tipo es numérico, de fecha, texto, etc. Esto es necesario para poder realizar una validación\footnote{Se denomina validación al control que se realiza sobre los datos antes de que ingresen en una tabla.} de los datos y garantizar asi la homogeneidad del contenido de la columna y por ende de la tabla.
+
+Por defecto el sistema agrega a todas las tablas una columna denominada \textbf{id} en la primera posición. Esta columna es especial ya que se carga automáticamente. Es \textbf{autonumérica}. Esto garantiza que, para todas las tablas, cada fila tenga un número de identificación único. Dicho de otro modo, no hay en ninguna tabla de sistema dos filas que contengan celdas exactamente iguales.
+
+El \textbf{id} es un campo a tener en cuenta cuando se filtra por filas repetidas. Es decir, si se quisiera saber cuáles de las filas de una tabla contienen celdas iguales, será necesario pues excluir de la búsqueda al campo \textbf{id}.
+
+El sistema brinda para todas las tablas las mismas opciones de manipulación de datos. Es decir que para toda tabla definida por el administrador se podrán realizar tareas de:
+
+\begin{itemize}
+ \item Búsquedas por índice o de modo avanzado
+ \item Alta de datos
+ \item Modificación de datos 
+ \item Eliminación de datos
+\end{itemize}
+
+
 \subsection{Búsquedas e índice}
+
+La primera utilidad del sistema es la capacidad de realizar búsquedas de todo tipo dentro de una tabla. Para ello se crearon dos métodos: uno automático que filtra datos por columna de modo sistemático llamado \textbf{Búsqueda Clasificada}. Y el segundo denominado \textbf{Búsqueda Avanzada} que ofrece un formulario con todos los campos dela tabla pàra buscar de acuerdo con diferentes criterios.
+
+\subsubsection{Búsqueda Clasificada}
+
+El algoritmo de este método realiza un índice de la tabla --como si se tratase del autofiltro en el Excel-- listando todos los nombres de las columnas y debajo los datos sin repetir de esa misma columna, indicando además cuántas filas de cada columna hay sin repetir. Al hacer click en uno de ellos el sistema realiza lo mismo con la salvedad de que se buscarán todos los datos sin repetir que coincidan con ese primer valor elegido.
+
+Asi se tiene una aplicación genérica que servirá para filtrar datos sin necesidad de utilizar el teclado. Otra función que tiene esta aplicación esla de ver datos repetidos e inconsistentes que difieran en algún caracter ya que inevitablemente se muestran todos los datos de la tabla.
+
+Es posible filtrar por celdas vacías de la tabla. 
+
+
+\subsubsection{Búsqueda Avanzada}
+
+Este formulario realiza un análisis de la tabla y, de acuerdo al tipo de dato definido en la columna, trae el formulario correspondiente. Por ejemplo en caso de que se trate de una columna de fecha o de número entero o decimal, el sistema ofrece un formulario que permite realizar búsquedas del tipo similar o exacto, mayor que, menor que y desde-hasta. Si se trata de valores tipo string (o de texto) ofrece un campo simple.
+
+Para todos los casos se puede indicar que la búsqueda sea exacta o similar. Búsqueda similar significa que la porción de texto o de número que estamos ingresando se encuentra en alguna parte del resultado.
+
+\paragraph{Ejemplo} Si buscamos el número 123 en una columna de nuestra tabla, y vemos que se encuentra como valor el número 512378, una búsqueda \textbf{exacta} no arrojará ningún valor, mientras que una búsqueda \textbf{similar} si dado que la cadena buscada \textbf{123} se encuentra en 5\textbf{123}78.
+
+En torno de este punto es importante decir que la \textbf{Búsqueda Avanzada} por defecto utiliza el modo \textbf{similar} de búsqueda.
+
+\subsubsection{Datos repetidos y no repetidos}
+
+
+
 \subsection{Alta de datos}
 \subsection{Modificacion de datos}
 \subsection{Eliminación de datos}
