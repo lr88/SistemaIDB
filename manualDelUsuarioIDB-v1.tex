@@ -25,22 +25,28 @@ El próposito de este sistema es dar soporte administrativo a todas las áreas d
 \clearpage
 
 \section{Introduccion}
-\subsection{¿Qué es y para que sirve?}
-El sitema de administacion y Alumnos es una base de datos que surge como una 
-necesidad puntual de almacenamiento de información consulta e interacción de 
-distintas áreas del instituto. 
-Este sistema de gestión permite operaciones básicas de consulta y maneja un 
-proceso de actualización, reorganización, añadidudra y borrado de información. 
-Es lo que se denomina una base de datos dinámica.
 
+\subsection{¿Qué es el LectorMySQL y para que sirve?}
+
+Es una aplicación web, multiusuario que permite la gestión de tablas en una mase de datos MySQL. 
+Más precisamente, es una interfaz entre el usuario y la información guardada en una base de datos.
+
+Este sistema de gestión permite operaciones básicas de consulta y maneja un 
+proceso de actualización, reorganización, alta y baja de información en forma de tablas. 
+
+Genera automáticamente formularios para interactuar con todo tipo de tablas, optimizando el uso y unificando 
+el tipo de información. Permite asimismo la gestión compartida de la información ya que el acceso es 
+restringido por un usuario Administrador que es quien define los perfiles.
 
 \subsection{¿Qué es una base de datos?}
-Se llama base de datos, o también banco de datos, a un conjunto de información 
-perteneciente a un mismo contexto, ordenada de modo sistemático para su 
-posterior recuperación, análisis y/o transmición.
+Se llama base de datos ---o también banco de datos--- a un conjunto de información 
+perteneciente a un mismo contexto, ordenada en tablas de modo sistemático para su 
+recuperación, análisis y/o transmisión.
+
 El manejo de las bases de datos se lleva mediante sistemas de gestión (llamados 
 DBMS por sus siglas en inglés: Database Management Systems o Sistemas de Gestión 
-de Base de Datos).
+de Base de Datos). MySQL es uno de ellos. Es un sistema de gestión de información que opera 
+sobre un servidor web y que queda a la espera de una petición por parte del usuario.
 
 En la conformación de una base de datos se pueden seguir diferentes modelos y 
 paradigmas, cada uno dotado de características, ventajas y dificultades, 
@@ -48,6 +54,10 @@ haciendo énfasis en su estructura organizacional, su jerarquía, su capacidad d
 transmisión o de interrelación, etc. Esto se conoce como modelos de base de 
 datos y permite el diseño y la implementación de algoritmos y otros mecanismos 
 lógicos de gestión, según sea el caso específico.
+
+El LectorMySQL es una máscara o interfaz que se conecta a un servidor de base de datos MySQL ---por medio de un servidor web---
+ e interactúa con ellas sin importar el tipo o formato de tablas existentes.
+
 \subsection{Tecnología}
 
 \section{Ingreso al sistema}
