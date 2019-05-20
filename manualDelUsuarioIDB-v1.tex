@@ -87,12 +87,14 @@ Las búsquedas particulares también son utilizadas al momento de necesitar real
 Cuando el usuario desea dejar de tener una búsqueda particular en su menú, este puede limpiar el  acceso rápido utilizando el icono correspondiente a borrar búsqueda. Esta acción no modifica ni elimina los registros con los que se trabajo, solo borra el acceso rápido a ellos.
     
 \subsection{Cambio de contraseña}
+
+El sistema IDB dependiendo de cada una de las distintas base de datos deja acceder o no al usuario, por lo cual cada base de datos contiene los usuarios y las contraseñas de estos independientemente de cada una de las distintas bases de datos.
+Para el cambio de contraseña el usuario tiene que acceder a la base de datos donde desea cambiar su password. Luego del acceso a dicha base de datos nos dirigimos al link “Cambiar clave de ingreso”, el sistema nos redirige a una pantalla con un formulario para completar con la contraseña actual y la nueva contraseña. Completamos  con los datos correspondientes y presionamos el botón de aceptar. 
+El sistema nos informa que los datos fueron modificados correctamente. Realizado este proceso ya disponemos de una nueva contraseña con el cual podemos ingresar a la base de datos que seleccionamos.
+
 \subsection{Importación de datos}
 \subsection{Compartir datos con otros usuarios}
-
-
 \section{Funciones de Tabla}
-
 \subsection{Estructura de una tabla de base de datos}
 
 Cuando el administrador da de alta una tabla en una base dados MySQL, es necesario definir una serie de parámetros y características de cada columna o \textbf{campo}. Es decir, que toda tabla del sistema tiene  definidos en detalle el tipo de datos para cada columna, para cada tabla. Por ejemplo definir si el tipo es numérico, de fecha, texto, etc. Esto es necesario para poder realizar una validación\footnote{Se denomina validación al control que se realiza sobre los datos antes de que ingresen en una tabla.} de los datos y garantizar asi la homogeneidad del contenido de la columna y por ende de la tabla.
@@ -140,6 +142,12 @@ En torno de este punto es importante decir que la \textbf{Búsqueda Avanzada} po
 
 
 \subsection{Alta de datos}
+Una de las funciones mas utilizadas en el sistema IDB es la carga de datos, esta consta de una serie de pasos importantes para la correcta insercion de datos en la base de datos. Cada tabla tiene la posibilidad de agregar nuevas filas de datos ya sea por un curso, una carrera, un libro, una nota, etc. Al Loguearnos en la base de datos podemos observar las distintas tablas que la conforman y en todas ellas podemos hacer una carga de datos. 
+Si necesitamos dar de alta un dato en una tabla espesifica podemos ingresar al link correspondiente de “Alta”, este nos redirijira a un formulario con los distintos campos opcionales que necesitamos almacenar en la tabla elegida. 
+Dentro de cada campo podemos encontrar las restricciones que tienen cada uno al momento de ingresar un dato y un ejemplo. A su vez nos ofrece dos opciones para ingresar un dato. Estas constan de un valor ya agregado anteriormente o un conjunto de valores agregados. Tambien hay que tener en cuenta que varios datos pueden ser completados automaticamente ya que estos pueden pertenecer a datos asociados a otros registros internos. 
+Luego de la carga de los datos, pulsamos en el boton “Enviar” y este realizara la carga a la tabla dentro de la base de datos del Sistema generando un ID unico para ese registro. Nos mostrara un informe con los registros cargados y se regresara al menu principal ya con la base actualizada.
+
+
 \subsection{Modificacion de datos}
 \subsection{Eliminación de datos}
 
