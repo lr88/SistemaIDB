@@ -61,17 +61,24 @@ El LectorMySQL es una máscara o interfaz que se conecta a un servidor de base d
 \subsection{Tecnología}
 
 \section{Ingreso al sistema}
-Para ingresar al Sistema IDB necesitamos previamente un Navegador web (Chrome, Firefox, Opera, etc.). Este sistema al tener una interface web, el usuario ingresa a través de la dirección física o IP del Sistema IDB en la barra de dirección de su navegador preferido. Luego del direccionamiento nos encontramos con una serie de menús. El primero corresponde a “Bases de Datos Activas” en el cual podemos realizar consultas y ABM de todas las bases de datos como por ejemplo Alumnos IDB, Biblioteca IDB, Encuestas IDB, etc.). El segundo menú corresponde a los “Sistemas Dedicados” que complementan al uso del sistema por ejemplo, Contabilidad y Recursos, Sistema de Compras, Calendario, Sistema de Inasistencias.
-Para el primer grupo de opciones al querer ingresar nos solicita una autenticación (Usuario y Contraseña), permitiendo o negando el acceso a las diferentes bases de datos. 
-En el segundo grupo nos re-direcciona a un sub-menú referente al año el cual queremos gestionar y luego solicita la autenticación del usuario. 
+
+(Captura de pantalla)
+
+Para ingresar al Sistema IDB necesitamos previamente un Navegador web (Chrome, Firefox, Opera, etc.). Este sistema al tener una interfase web, el usuario ingresa a través de la dirección física o IP del Sistema IDB en la barra de dirección de su navegador preferido. Luego del direccionamiento nos encontramos con una serie de menús. El primero corresponde a “Bases de Datos Activas” en el cual podemos realizar consultas y ABM\footnote{¿Que es ABM?. si usamos la sigla hay que definirla primero.} de todas las bases de datos como por ejemplo Alumnos IDB, Biblioteca IDB, Encuestas IDB, etc.). El segundo menú corresponde a los “Sistemas Dedicados” que complementan al uso del sistema por ejemplo, Contabilidad y Recursos, Sistema de Compras, Calendario, Sistema de Inasistencias.
+
+(Captura de pantalla)
+
+Para el primer grupo de opciones al querer ingresar nos solicita una autenticación (Usuario y Contraseña), permitiendo o negando el acceso a las diferentes bases de datos. En el segundo grupo nos re-direcciona a un sub-menú referente al año el cual queremos gestionar y luego solicita la autenticación del usuario. 
  
-\subsection{Elementos del menú principal}
-El menú principal consta de una barra de acceso al menú de inicio con el objetivo de poder intercambiar las bases de datos a las cuales queremos acceder.
+\subsection{Elementos del menú principal\label{ElementosDelMenuPrincipal}}
+
+El menú principal consta de una barra de acceso al menú de inicio con el objetivo de poder intercambiar las bases de datos a las cuales queremos acceder. 
 Luego un mensaje indicándonos la base de datos activa y el usuario logueado.
 Este continúa con un menú que contiene diversas opciones disponibles para el usuario: la Emisión de Certificados, Cambiar la clave de ingreso, Importar datos, Eliminación de registros y la papelera.
 
-El menú principal a su vez muestra un formulario en el cual se reflejan las búsquedas guardadas por el Usuario y los ABMC de las mismas.
-Por debajo con el conjunto de opciones que son las encargadas de manipular los datos de la base en la que estamos parados.
+(Captura de pantalla)
+
+El menú principal a su vez muestra un formulario en el cual se reflejan las búsquedas guardadas por el Usuario y los ABMC\footnote{¿Que es ABMC?. Idem anterior.} de las mismas. Por debajo con el conjunto de opciones que son las encargadas de manipular los datos de la base en la que estamos parados.
 Dichas opciones contienen las distintas tablas que forman los datos y una serie de links para el ABMC de cada una de ellas.
 
 
@@ -81,7 +88,11 @@ Dichas opciones contienen las distintas tablas que forman los datos y una serie 
 \subsection{Búsquedas particulares}
 En el uso diario del sistema IDB y las consultas frecuentes a los mismos registros puede generar un uso tedioso al momento de realizar la búsqueda necesaria. Para ello se genero lo que se denominan búsquedas particulares, estas nos permiten tener un acceso más rápido a dichas consultas.
 
+(Captura de pantalla)
+
 Las búsquedas particulares son búsquedas guardadas por el usuario para acceso frecuente, al momento de realizar una búsqueda se puede pedir que ese grupo de registros lo guarde como una búsqueda particular, generando un link en el menú principal. Este link consta de un titulo formado por automáticamente por los principales registros  de los  datos que el usuario consultó. Una vez realizada la búsqueda particular se puede trabajar en estos registros si necesitamos consultarlos,  modificarlos, duplicarlos y/o exportarlos.
+
+(Captura de pantalla)
 
 Las búsquedas particulares también son utilizadas al momento de necesitar realizar una Emisión de Certificados como también la eliminación de registros. 
 Cuando el usuario desea dejar de tener una búsqueda particular en su menú, este puede limpiar el  acceso rápido utilizando el icono correspondiente a borrar búsqueda. Esta acción no modifica ni elimina los registros con los que se trabajo, solo borra el acceso rápido a ellos.
@@ -89,6 +100,9 @@ Cuando el usuario desea dejar de tener una búsqueda particular en su menú, est
 \subsection{Cambio de contraseña}
 
 El sistema IDB dependiendo de cada una de las distintas base de datos deja acceder o no al usuario, por lo cual cada base de datos contiene los usuarios y las contraseñas de estos independientemente de cada una de las distintas bases de datos.
+
+(Captura de pantalla)
+
 Para el cambio de contraseña el usuario tiene que acceder a la base de datos donde desea cambiar su password. Luego del acceso a dicha base de datos nos dirigimos al link “Cambiar clave de ingreso”, el sistema nos redirige a una pantalla con un formulario para completar con la contraseña actual y la nueva contraseña. Completamos  con los datos correspondientes y presionamos el botón de aceptar. 
 El sistema nos informa que los datos fueron modificados correctamente. Realizado este proceso ya disponemos de una nueva contraseña con el cual podemos ingresar a la base de datos que seleccionamos.
 
@@ -97,13 +111,17 @@ El sistema nos informa que los datos fueron modificados correctamente. Realizado
 \section{Funciones de Tabla}
 \subsection{Estructura de una tabla de base de datos}
 
-Cuando el administrador da de alta una tabla en una base dados MySQL, es necesario definir una serie de parámetros y características de cada columna o \textbf{campo}. Es decir, que toda tabla del sistema tiene  definidos en detalle el tipo de datos para cada columna, para cada tabla. Por ejemplo definir si el tipo es numérico, de fecha, texto, etc. Esto es necesario para poder realizar una validación\footnote{Se denomina validación al control que se realiza sobre los datos antes de que ingresen en una tabla.} de los datos y garantizar asi la homogeneidad del contenido de la columna y por ende de la tabla.
+Cuando el administrador da de alta una tabla en una base dados MySQL, es necesario definir una serie de parámetros y características de cada columna o \textbf{campo}. Es decir, que toda tabla del sistema tiene definidos en detalle el tipo de datos para cada columna, para cada tabla. Por ejemplo definir si el tipo es numérico, de fecha, texto, etc. Esto es necesario para poder realizar una validación\footnote{Se denomina validación al control que se realiza sobre los datos antes de que ingresen en una tabla.} de los datos y garantizar asi la homogeneidad del contenido de la columna y por ende de la tabla.
 
 Por defecto el sistema agrega a todas las tablas una columna denominada \textbf{id} en la primera posición. Esta columna es especial ya que se carga automáticamente. Es \textbf{autonumérica}. Esto garantiza que, para todas las tablas, cada fila tenga un número de identificación único. Dicho de otro modo, no hay en ninguna tabla de sistema dos filas que contengan celdas exactamente iguales.
+
+(Captura de pantalla)
 
 El \textbf{id} es un campo a tener en cuenta cuando se filtra por filas repetidas. Es decir, si se quisiera saber cuáles de las filas de una tabla contienen celdas iguales, será necesario pues excluir de la búsqueda al campo \textbf{id}.
 
 El sistema brinda para todas las tablas las mismas opciones de manipulación de datos. Es decir que para toda tabla definida por el administrador se podrán realizar tareas de:
+
+(Captura de pantalla)
 
 \begin{itemize}
  \item Búsquedas por índice o de modo avanzado
@@ -112,7 +130,6 @@ El sistema brinda para todas las tablas las mismas opciones de manipulación de 
  \item Eliminación de datos
 \end{itemize}
 
-
 \subsection{Búsquedas e índice}
 
 La primera utilidad del sistema es la capacidad de realizar búsquedas de todo tipo dentro de una tabla. 
@@ -120,7 +137,9 @@ Para ello se crearon dos métodos: uno automático que filtra datos por columna 
 
 \subsubsection{Búsqueda Clasificada}
 
-El algoritmo de este método realiza un índice de la tabla --como si se tratase del autofiltro en el Excel-- listando todos los nombres de las columnas y debajo los datos sin repetir de esa misma columna, indicando además cuántas filas de cada columna hay sin repetir. Al hacer click en uno de ellos el sistema realiza lo mismo con la salvedad de que se buscarán todos los datos sin repetir que coincidan con ese primer valor elegido.
+El de este método realiza un índice de la tabla --como si se tratase del autofiltro en el Excel-- listando todos los nombres de las columnas y debajo los datos sin repetir de esa misma columna, indicando además cuántas filas de cada columna hay sin repetir. Al hacer click en uno de ellos el sistema realiza lo mismo con la salvedad de que se buscarán todos los datos sin repetir que coincidan con ese primer valor elegido.
+
+(Captura de pantalla)
 
 Asi se tiene una aplicación genérica que servirá para filtrar datos sin necesidad de utilizar el teclado. Otra función que tiene esta aplicación esla de ver datos repetidos e inconsistentes que difieran en algún caracter ya que inevitablemente se muestran todos los datos de la tabla.
 
@@ -131,6 +150,8 @@ Es posible filtrar por celdas vacías de la tabla.
 
 Este formulario realiza un análisis de la tabla y, de acuerdo al tipo de dato definido en la columna, trae el formulario correspondiente. Por ejemplo en caso de que se trate de una columna de fecha o de número entero o decimal, el sistema ofrece un formulario que permite realizar búsquedas del tipo similar o exacto, mayor que, menor que y desde-hasta. Si se trata de valores tipo string (o de texto) ofrece un campo simple.
 
+(Captura de pantalla)
+
 Para todos los casos se puede indicar que la búsqueda sea exacta o similar. Búsqueda similar significa que la porción de texto o de número que estamos ingresando se encuentra en alguna parte del resultado.
 
 \paragraph{Ejemplo} Si buscamos el número 123 en una columna de nuestra tabla, y vemos que se encuentra como valor el número 512378, una búsqueda \textbf{exacta} no arrojará ningún valor, mientras que una búsqueda \textbf{similar} si dado que la cadena buscada \textbf{123} se encuentra en 5\textbf{123}78.
@@ -140,9 +161,14 @@ En torno de este punto es importante decir que la \textbf{Búsqueda Avanzada} po
 \subsubsection{Datos repetidos y no repetidos}
 
 \subsection{Alta de datos}
-Una de las funciones mas utilizadas en el sistema IDB es la carga de datos, esta consta de una serie de pasos importantes para la correcta insercion de datos en la base de datos. Cada tabla tiene la posibilidad de agregar nuevas filas de datos ya sea por un curso, una carrera, un libro, una nota, etc. Al Loguearnos en la base de datos podemos observar las distintas tablas que la conforman y en todas ellas podemos hacer una carga de datos. 
-Si necesitamos dar de alta un dato en una tabla espesifica podemos ingresar al link correspondiente de “Alta”, este nos redirijira a un formulario con los distintos campos opcionales que necesitamos almacenar en la tabla elegida. 
+
+Una de las funciones mas utilizadas en el sistema IDB es la carga de datos, esta consta de una serie de pasos importantes para la correcta insercion de datos en la base de datos. Cada tabla tiene la posibilidad de agregar nuevas filas de datos ya sea por un curso, una carrera, un libro, una nota, etc. Al loguearnos en la base de datos podemos observar las distintas tablas que la conforman y en todas ellas podemos hacer una carga de datos. 
+
+Si necesitamos dar de alta un dato en una tabla específica, podemos ingresar al link correspondiente de “Alta”, este nos redirijirá a un formulario con los distintos campos opcionales que necesitamos almacenar en la tabla elegida. 
 Dentro de cada campo podemos encontrar las restricciones que tienen cada uno al momento de ingresar un dato y un ejemplo. A su vez nos ofrece dos opciones para ingresar un dato. Estas constan de un valor ya agregado anteriormente o un conjunto de valores agregados. Tambien hay que tener en cuenta que varios datos pueden ser completados automaticamente ya que estos pueden pertenecer a datos asociados a otros registros internos. 
+
+(Captura de pantalla)
+
 Luego de la carga de los datos, pulsamos en el boton “Enviar” y este realizara la carga a la tabla dentro de la base de datos del Sistema generando un ID unico para ese registro. Nos mostrara un informe con los registros cargados y se regresara al menu principal ya con la base actualizada.
 
 \subsection{Modificacion de datos}
@@ -150,7 +176,13 @@ Luego de la carga de los datos, pulsamos en el boton “Enviar” y este realiza
 Al momento de corregir un registro o la necesidad de actualizar un dato el sistema IDB proporciona un servicio simple para llevar a cabo esa tarea. Gracias a los sistemas de busqueda podemos encontrar los registros que necesitamos modificar, y cada registro encontrado contiene una funsion directa de edicion. Luego de las modificaciones necesarias al confirmar los cambios estos se guardan en la tabla correspondiente.
  
 \subsection{Eliminación de datos}
-Para la eliminación de registros el sistema cuenta con una serie de pasos importantes, el usuario está obligado a recorrerlos con el objetivo de asegurar la información que uno desea manipular. Al momento de realizar este tipo de modificación para eliminar un registro el usuario gracias a los distintos sistemas de búsquedas, tiene que encontrar el registro que desea eliminar. Luego de encontrar el registro, el paso siguiente es guardar ese registro como una búsqueda particular. Esto logra que el usuario pueda chequear los datos a eliminar en el menú principal. Atención! (es muy importante chequear los datos). Como mencionamos en el punto 2.1 (Elementos del menú principal) este contiene la opción “Eliminación de registros”. Al ingresar en dicha opción, nos muestra el listado de búsquedas particulares que tenemos realizadas. Por lo tanto debe existir el registro previamente guardado. Luego de estos pasos podemos proceder a eliminar el registro deseado.
+
+Para la eliminación de registros el sistema cuenta con una serie de pasos importantes. El usuario está obligado a recorrerlos con el objetivo de asegurar la información que uno desea manipular. Al momento de realizar este tipo de modificación para eliminar un registro el usuario gracias a los distintos sistemas de búsquedas, tiene que encontrar el registro que desea eliminar. Luego de encontrar el registro, el paso siguiente es guardar ese registro como una búsqueda particular. Esto logra que el usuario pueda chequear los datos a eliminar en el menú principal. 
+
+Atención! (es muy importante chequear los datos). Como mencionamos en el punto \ref{ElementosDelMenuPrincipal}, éste contiene la opción “Eliminación de registros”. Al ingresar en dicha opción, nos muestra el listado de búsquedas particulares que tenemos realizadas. Por lo tanto debe existir el registro previamente guardado. Luego de estos pasos podemos proceder a eliminar el registro deseado.
+
+(Captura de pantalla)
+
 Como la eliminación de un registro es un ejercicio muy delicado, el sistema IDB vuelve a mostrar los datos con los que va a realizar este proceso, asegurando que el usuario tenga un repaso de los estos y pueda confirmar la operación. Aunque el ejercicio sea muy tedioso es necesario que se realice una confirmación del proceso una vez más asegurando que el usuario es consciente de lo que está haciendo. No obstante aunque realicemos los pasos anteriores, el registro no fue eliminado aún de la base de datos. Este queda guardado en la papelera con el objetivo de poder recuperar los datos en cualquier momento.
 
 \section{Informes}
