@@ -85,6 +85,7 @@ Dichas opciones contienen las distintas tablas que forman los datos y una serie 
 
 \section{Entorno de Usuario}
 \subsection{Tabla de usuario}
+
 \subsection{Búsquedas particulares}
 En el uso diario del sistema IDB y las consultas frecuentes a los mismos registros puede generar un uso tedioso al momento de realizar la búsqueda necesaria. Para ello se genero lo que se denominan búsquedas particulares, estas nos permiten tener un acceso más rápido a dichas consultas.
 
@@ -107,8 +108,19 @@ Para el cambio de contraseña el usuario tiene que acceder a la base de datos do
 El sistema nos informa que los datos fueron modificados correctamente. Realizado este proceso ya disponemos de una nueva contraseña con el cual podemos ingresar a la base de datos que seleccionamos.
 
 \subsection{Importación de datos}
+Cuando un usuario tiene la necesidad de realizar una carga de datos extensa el sistema contiene una función la cual nos facilita la carga de estos. Implementando un archivo CSV logramos importar los datos y plasmarlos directamente en la base de datos que queramos.
+Esta opcion se encuentra en el menu principal de cada una de las Base de datos  al ingresar a esta nos indica las caracteristica sque tiene que tener el archivo CSV para importar los datos que necesitamos. Seleccionamos el archivo, e indicamos el nombre que queremos darle a nuestra tabla. una vez realizada esta operacion ya podemos verificar la carga de los datos con la nueva tabla que generamos.
+
+Definición de archivos CSV: Un csv (comma separated values) es un archivo de texto que almacena los datos en forma de columnas, separadas por coma y las filas se distinguen por saltos de línea. Es una forma muy sencilla de representar la información. Normalmente para importar o exportar de bases de datos de unas aplicaciones.
+
+
 \subsection{Compartir datos con otros usuarios}
 \section{Funciones de Tabla}
+duplicar filas .
+edicion de tabla completa .
+
+
+
 \subsection{Estructura de una tabla de base de datos}
 
 Cuando el administrador da de alta una tabla en una base dados MySQL, es necesario definir una serie de parámetros y características de cada columna o \textbf{campo}. Es decir, que toda tabla del sistema tiene definidos en detalle el tipo de datos para cada columna, para cada tabla. Por ejemplo definir si el tipo es numérico, de fecha, texto, etc. Esto es necesario para poder realizar una validación\footnote{Se denomina validación al control que se realiza sobre los datos antes de que ingresen en una tabla.} de los datos y garantizar asi la homogeneidad del contenido de la columna y por ende de la tabla.
