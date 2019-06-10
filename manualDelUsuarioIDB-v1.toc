@@ -12,16 +12,16 @@
 \contentsline {subsection}{\numberline {3.4}Importaci\IeC {\'o}n de datos}{5}% 
 \contentsline {subsection}{\numberline {3.5}Compartir datos con otros usuarios}{5}% 
 \contentsline {section}{\numberline {4}Funciones de Tabla}{5}% 
-\contentsline {subsection}{\numberline {4.1}Estructura de una tabla de base de datos}{5}% 
-\contentsline {subsection}{\numberline {4.2}B\IeC {\'u}squedas e \IeC {\'\i }ndice}{5}% 
-\contentsline {subsubsection}{\numberline {4.2.1}B\IeC {\'u}squeda Clasificada}{5}% 
-\contentsline {subsubsection}{\numberline {4.2.2}B\IeC {\'u}squeda Avanzada}{6}% 
-\contentsline {paragraph}{Ejemplo}{6}% 
-\contentsline {subsubsection}{\numberline {4.2.3}Datos repetidos y no repetidos}{6}% 
-\contentsline {subsection}{\numberline {4.3}Alta de datos}{6}% 
-\contentsline {subsection}{\numberline {4.4}Modificacion de datos}{6}% 
-\contentsline {subsection}{\numberline {4.5}Eliminaci\IeC {\'o}n de datos}{6}% 
-\contentsline {section}{\numberline {5}Informes}{6}% 
-\contentsline {subsection}{\numberline {5.1}Edici\IeC {\'o}n de informes}{6}% 
-\contentsline {subsection}{\numberline {5.2}Exportaci\IeC {\'o}n de datos a excel}{6}% 
-\contentsline {subsection}{\numberline {5.3}Backup por tabla}{6}% 
+\contentsline {subsection}{\numberline {4.1}Estructura de una tabla de base de datos}{6}% 
+\contentsline {subsection}{\numberline {4.2}B\IeC {\'u}squedas e \IeC {\'\i }ndice}{6}% 
+\contentsline {subsubsection}{\numberline {4.2.1}B\IeC {\'u}squeda Clasificada}{6}% 
+\contentsline {subsubsection}{\numberline {4.2.2}B\IeC {\'u}squeda Avanzada}{7}% 
+\contentsline {paragraph}{Ejemplo}{7}% 
+\contentsline {subsubsection}{\numberline {4.2.3}Datos repetidos y no repetidos}{7}% 
+\contentsline {subsection}{\numberline {4.3}Alta de datos}{7}% 
+\contentsline {subsection}{\numberline {4.4}Modificacion de datos}{8}% 
+\contentsline {subsection}{\numberline {4.5}Eliminaci\IeC {\'o}n de datos}{8}% 
+\contentsline {section}{\numberline {5}Informes}{8}% 
+\contentsline {subsection}{\numberline {5.1}Edici\IeC {\'o}n de informes}{8}% 
+\contentsline {subsection}{\numberline {5.2}Exportaci\IeC {\'o}n de datos a excel}{8}% 
+\contentsline {subsection}{\numberline {5.3}Backup por tabla}{8}% 

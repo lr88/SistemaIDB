@@ -85,6 +85,8 @@ Dichas opciones contienen las distintas tablas que forman los datos y una serie 
 
 \section{Entorno de Usuario}
 \subsection{Tabla de usuario}
+Cada usuario al ingresar a la base de datos se encuentra con un formato generico para la dispocision de los distintos menus. Aparte de esto el sistema muesra un conjunto de busquedas generadas por el usuario propias del mismo. Estas busquedas quedan almacenadas para el uso diario, y no son comparticas para los distinto susuarios. Por lo tanto este menu que muestra lo que en el punto siguente definimos como busquedas particulares quedan como configuraciones en la interfaz del usuario personalizada.
+
 
 \subsection{Búsquedas particulares}
 En el uso diario del sistema IDB y las consultas frecuentes a los mismos registros puede generar un uso tedioso al momento de realizar la búsqueda necesaria. Para ello se genero lo que se denominan búsquedas particulares, estas nos permiten tener un acceso más rápido a dichas consultas.
@@ -115,6 +117,8 @@ Definición de archivos CSV: Un csv (comma separated values) es un archivo de te
 
 
 \subsection{Compartir datos con otros usuarios}
+
+
 \section{Funciones de Tabla}
 duplicar filas .
 edicion de tabla completa .
@@ -172,6 +176,9 @@ En torno de este punto es importante decir que la \textbf{Búsqueda Avanzada} po
 
 \subsubsection{Datos repetidos y no repetidos}
 
+Para no producir datos repetidos las distintas bases de datos estan configuradas con lo que se denomina un ID unico el cual garantiza que todas las filas de las tablas sean distintas unas de las otras a pesar de que los datos ingresados puedan ser similares en la mayoria de los campos 
+
+
 \subsection{Alta de datos}
 
 Una de las funciones mas utilizadas en el sistema IDB es la carga de datos, esta consta de una serie de pasos importantes para la correcta insercion de datos en la base de datos. Cada tabla tiene la posibilidad de agregar nuevas filas de datos ya sea por un curso, una carrera, un libro, una nota, etc. Al loguearnos en la base de datos podemos observar las distintas tablas que la conforman y en todas ellas podemos hacer una carga de datos. 
@@ -200,6 +207,8 @@ Como la eliminación de un registro es un ejercicio muy delicado, el sistema IDB
 \section{Informes}
 \subsection{Edición de informes}
 \subsection{Exportación de datos a excel}
+El sistema IDB presenta una facilidad al momento de intentar manejar los datos para poder realizar estadisticas externas, busquedas especiales, contaduria de datos y/o el analisis de informacion. Para poder realizar estas tareas se utiliza la exportacion de los datos para poder integrarlos con los softwares que deseamos utilizar. Esta exportacion se realiza en lo que se denomina un archivo CSV o separado por comas, lo cual nos permite integrarlo en cualquier sistema que entienda este formato.
+
 \subsection{Backup por tabla}
 
 
